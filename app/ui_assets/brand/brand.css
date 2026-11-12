@@ -1,0 +1,35 @@
+/* Cognitia Engineering skin for the stock chat UI. Local fonts and tokens only; no external font or logo calls. */
+@import url("/brand/brand-tokens.css");
+@font-face{font-family:"Geist";src:url("/brand/fonts/Geist-Variable.ttf") format("truetype");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Geist Mono";src:url("/brand/fonts/GeistMono-Variable.ttf") format("truetype");font-weight:100 900;font-display:swap}
+
+/* Map the chat UI's theme variables onto the Cognitia tokens: Bone / Carbon, Ember as accent only. */
+:root,:root.dark{
+  --font-sans:var(--cg-f-body);--font-mono:var(--cg-f-mono);
+  --default-font-family:var(--cg-f-body);--default-mono-font-family:var(--cg-f-mono);
+  --background:var(--cg-bg);--foreground:var(--cg-text);
+  --card:var(--cg-surface);--card-foreground:var(--cg-text);
+  --popover:var(--cg-surface);--popover-foreground:var(--cg-text);
+  --primary:var(--cg-primary);--primary-foreground:var(--cg-on-primary);
+  --secondary:var(--cg-surface-alt);--secondary-foreground:var(--cg-text);
+  --muted:var(--cg-surface-alt);--muted-foreground:var(--cg-muted);
+  --accent:var(--cg-surface-alt);--accent-foreground:var(--cg-text);
+  --destructive:var(--cg-flag);--border:var(--cg-line);--input:var(--cg-line);--ring:var(--cg-accent);
+  --sugar:var(--cg-surface-alt);--sidebar:var(--cg-surface-alt);--sidebar-foreground:var(--cg-text);
+  --sidebar-primary:var(--cg-accent);--sidebar-primary-foreground:var(--cg-on-primary);
+  --sidebar-accent:var(--cg-bg);--sidebar-accent-foreground:var(--cg-text);
+  --sidebar-border:var(--cg-line);--sidebar-ring:var(--cg-accent);--pydantic-brand:var(--cg-accent);
+}
+html,body{font-family:var(--cg-f-body);background:var(--cg-bg);color:var(--cg-text)}
+code,pre,kbd{font-family:var(--cg-f-mono)}
+
+/* Brand header (replaces the stock logo and name) */
+.cg-brand{display:flex;align-items:center;gap:.5rem;font-weight:600;letter-spacing:-.01em;white-space:nowrap}
+.cg-brand img{height:1.35rem;width:1.35rem;display:inline-block}
+.cg-brand .cg-brand-dark{display:none}
+.dark .cg-brand .cg-brand-light{display:none}
+.dark .cg-brand .cg-brand-dark{display:inline-block}
+
+/* Demo notice under the brand name (sidebar header) */
+.cg-notice{margin:.15rem .5rem .25rem;padding:.4rem .5rem;border-left:2px solid var(--cg-accent);
+  color:var(--cg-muted);font:500 .68rem/1.35 var(--cg-f-mono)}

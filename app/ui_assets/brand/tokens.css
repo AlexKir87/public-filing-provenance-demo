@@ -1,0 +1,12 @@
+/* Cognitia website tokens, "Round 3" system, extracted from the mockup artifact (2026-10-26, ab145fd3). Source of truth for the mockup; not yet a brand decision file. */
+:root{
+  --bg:#F5F4F0; --surface:#FFFFFF; --surface-alt:#ECEAE4; --text:#14120F; --muted:#5F5C55; --line:#D9D6CE; --dot:#C9C5BB;
+  --primary:#14120F; --on-primary:#F5F4F0; --accent:#E5501B; --accent-text:#B83A0C;
+  --ok:#1F6B4A; --review:#7A5200; --flag:#A12C2C; --term-bg:#14120F; --term-text:#E6E4DE; --term-muted:#A39F96;
+  --f-body:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif; --f-mono:"Geist Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+:root[data-theme="dark"]{
+  --bg:#14120F; --surface:#1C1A17; --surface-alt:#211F1B; --text:#F5F4F0; --muted:#A39F96; --line:#34312C; --dot:#34312C;
+  --primary:#F5F4F0; --on-primary:#14120F; --accent:#FF6A33; --accent-text:#FF7F4F;
+  --ok:#6FCF9F; --review:#E3B341; --flag:#F28B82; --term-bg:#0C0B09; --term-text:#E6E4DE; --term-muted:#A39F96;
+}

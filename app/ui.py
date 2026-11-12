@@ -23,6 +23,8 @@ from pydantic_ai import Agent, ModelResponse, TextPart
 from pydantic_ai.messages import ModelMessage, ModelRequest, UserPromptPart
 from pydantic_ai.models.function import AgentInfo, FunctionModel
 from starlette.applications import Starlette
+from starlette.routing import Mount
+from starlette.staticfiles import StaticFiles
 
 from app import agent as pipeline
 from app.models import AnswerBundle
@@ -103,12 +105,21 @@ def allowed_hosts_from_env() -> list[str]:
     return [h.strip() for h in raw.split(",") if h.strip()]
 
 
+ASSETS_DIR = Path(__file__).resolve().parent / "ui_assets"
+BRANDED_HTML = ASSETS_DIR / "chat.html"
+
+
 def build_app(*, html_source: str | Path | None = None) -> Starlette:
     """The Starlette app. IP addresses and localhost are always allowed; other host names
     must be listed in `COGNITIA_UI_ALLOWED_HOSTS` (never `*` unless something in front of
     the app authenticates)."""
     source = html_source if html_source is not None else os.environ.get(ENV_HTML_SOURCE)
-    return build_ui_agent().to_web(allowed_hosts=allowed_hosts_from_env(), html_source=source)
+    if source is None:
+        source = BRANDED_HTML  # branded shell; the env var above still overrides it
+    app = build_ui_agent().to_web(allowed_hosts=allowed_hosts_from_env(), html_source=source)
+    # Local brand files (logo, favicon, fonts, theme CSS); inserted first so they win over `/{id}`.
+    app.router.routes.insert(0, Mount("/brand", app=StaticFiles(directory=ASSETS_DIR / "brand")))
+    return app
 
 
 def main() -> None:  # pragma: no cover - starts a server
