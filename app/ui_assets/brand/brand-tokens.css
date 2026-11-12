@@ -1,0 +1,12 @@
+/* Generated from tokens.css: names prefixed --cg- (the plain names collide with the chat UI variables) and the dark block keyed to the chat UI's `.dark` class. */
+:root{
+  --cg-bg:#F5F4F0; --cg-surface:#FFFFFF; --cg-surface-alt:#ECEAE4; --cg-text:#14120F; --cg-muted:#5F5C55; --cg-line:#D9D6CE; --cg-dot:#C9C5BB;
+  --cg-primary:#14120F; --cg-on-primary:#F5F4F0; --cg-accent:#E5501B; --cg-accent-text:#B83A0C;
+  --cg-ok:#1F6B4A; --cg-review:#7A5200; --cg-flag:#A12C2C; --cg-term-bg:#14120F; --cg-term-text:#E6E4DE; --cg-term-muted:#A39F96;
+  --cg-f-body:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif; --cg-f-mono:"Geist Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+:root.dark{
+  --cg-bg:#14120F; --cg-surface:#1C1A17; --cg-surface-alt:#211F1B; --cg-text:#F5F4F0; --cg-muted:#A39F96; --cg-line:#34312C; --cg-dot:#34312C;
+  --cg-primary:#F5F4F0; --cg-on-primary:#14120F; --cg-accent:#FF6A33; --cg-accent-text:#FF7F4F;
+  --cg-ok:#6FCF9F; --cg-review:#E3B341; --cg-flag:#F28B82; --cg-term-bg:#0C0B09; --cg-term-text:#E6E4DE; --cg-term-muted:#A39F96;
+}
