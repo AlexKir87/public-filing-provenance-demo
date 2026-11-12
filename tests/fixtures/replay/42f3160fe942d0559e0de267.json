@@ -1,0 +1,79 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "The question asks for investment advice. I should decline, and offer to state figures. Call no tools.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"I cannot provide investment advice, including whether to buy or sell any stock. I can, however, state figures from this one filing (the 10-K of Apple Inc. for the fiscal year ended in September) \u2014 for example net sales, net income or margins \u2014 with the origin of each figure, if that would help.\", \"figures\": [], \"notes\": []}",
+     "tool_call_id": "chatcmpl-tool-a9cf1f38df3992bb",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3731,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3712,
+    "output_tokens": 157,
+    "output_reasoning_tokens": 21,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 21,
+     "image_tokens": 0
+    },
+    "cost": "0.0001514604"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:24:27.955040Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Makora",
+    "cost": 0.0002101596,
+    "upstream_inference_cost": 0.0002101596,
+    "upstream_inference_prompt_cost": 2.64696e-05,
+    "upstream_inference_completions_cost": 0.00018369,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:24:25Z"
+   },
+   "provider_response_id": "gen-1794475465-m5gnxaieaUtHry1ZNHf8",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf12-9992-746d-a429-a1467ff196cb",
+   "conversation_id": "01a1cf12-9992-746d-a429-a147a6cf8c32",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "The user asks for gross margin in dollars. Gross margin (gross profit) in dollars. Let me look up GrossProfit.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:GrossProfit\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "call_a76779a521d240d2916a16383c2ed55f",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 5348,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 896,
+    "output_tokens": 98,
+    "output_reasoning_tokens": 28,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 28,
+     "image_tokens": 0
+    },
+    "cost": "0.0010210032"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:21:36.459155Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Wafer",
+    "cost": 0.000298746,
+    "upstream_inference_cost": 0.000298746,
+    "upstream_inference_prompt_cost": 0.00024318,
+    "upstream_inference_completions_cost": 5.5566e-05,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:21:35Z"
+   },
+   "provider_response_id": "gen-1794475295-Ldky2fRcArVtwE0VycEh",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-0244-7628-9c07-aae1ab65274e",
+   "conversation_id": "01a1cf10-0244-7628-9c07-aae23f7c0686",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "Gross margin in dollars = gross profit = $195,201,000,000. Provide figure.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"Gross margin in dollars, which the filing reports as gross profit for the fiscal year ended in September, was {fig:0}.\", \"figures\": [{\"label\": \"Gross profit\", \"value\": \"195201000000\", \"unit\": \"USD\", \"status\": \"verified\", \"provenance\": {\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"XBRL\", \"tag\": \"GrossProfit\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {}}, \"claimed_by\": \"agent\"}], \"notes\": [\"The figure is for the full fiscal year only.\"]}",
+     "tool_call_id": "call_7a62002ecd73411290284f1340bd9aac",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 5610,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 5376,
+    "output_tokens": 239,
+    "output_reasoning_tokens": 19,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 19,
+     "image_tokens": 0
+    },
+    "cost": "0.0002724792"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:21:37.833448Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Wafer",
+    "cost": 0.000244215,
+    "upstream_inference_cost": 0.000244215,
+    "upstream_inference_prompt_cost": 0.000108702,
+    "upstream_inference_completions_cost": 0.000135513,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:21:36Z"
+   },
+   "provider_response_id": "gen-1794475296-37zW81KmNodb96Y5A3fR",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-0244-7628-9c07-aae1ab65274e",
+   "conversation_id": "01a1cf10-0244-7628-9c07-aae23f7c0686",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

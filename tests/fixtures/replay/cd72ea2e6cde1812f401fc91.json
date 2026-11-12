@@ -1,0 +1,212 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "Let me search the filing text for the cover page share count.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "search_filing_text",
+     "args": "{\"query\": \"shares of common stock outstanding October 2025\"}",
+     "tool_call_id": "call-7da6791f-c2e6-4b85-83c4-25cb671fa255",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3744,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3712,
+    "output_tokens": 63,
+    "output_reasoning_tokens": 13,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 13,
+     "image_tokens": 0
+    },
+    "cost": "0.0000752304"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:22:37.716541Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "DeepInfra",
+    "cost": 6.97956e-05,
+    "upstream_inference_cost": 6.97956e-05,
+    "upstream_inference_prompt_cost": 3.01056e-05,
+    "upstream_inference_completions_cost": 3.969e-05,
+    "is_byok": false,
+    "service_tier": "priority",
+    "timestamp": "2026-11-12T09:22:36Z"
+   },
+   "provider_response_id": "gen-1794475356-bzLnsNNAdaZ9MgJY4iUO",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-f0c2-7492-a8e1-fc0818c294ae",
+   "conversation_id": "01a1cf10-f0c2-7492-a8e1-fc09394adaf0",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"As of the date stated on the cover page, {fig:0} of common stock were issued and outstanding.\", \"figures\": [{\"label\": \"Shares of common stock issued and outstanding\", \"value\": \"14,776,353,000\", \"unit\": \"shares\", \"status\": \"verified\", \"claimed_by\": \"agent\", \"provenance\": {\"kind\": \"text\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"Cover\", \"tag\": null, \"period_start\": null, \"period_end\": null, \"dimensions\": {}, \"quote\": \"14,776,353,000 shares of common stock were issued and outstanding as of October 17, 2025.\", \"inputs\": [], \"formula\": null}}], \"notes\": []}",
+     "tool_call_id": "call-abaef9c1-804d-4ab1-9e82-efbd6c5b3bf6",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3954,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3712,
+    "output_tokens": 234,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.0002629704"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:22:39.700472Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "DeepInfra",
+    "cost": 0.0002216256,
+    "upstream_inference_cost": 0.0002216256,
+    "upstream_inference_prompt_cost": 7.42056e-05,
+    "upstream_inference_completions_cost": 0.00014742,
+    "is_byok": false,
+    "service_tier": "priority",
+    "timestamp": "2026-11-12T09:22:37Z"
+   },
+   "provider_response_id": "gen-1794475357-GluGofXyCT1Fa5sUNi7G",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-f0c2-7492-a8e1-fc0818c294ae",
+   "conversation_id": "01a1cf10-f0c2-7492-a8e1-fc09394adaf0",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "The value must be a decimal, so remove commas. But the rule says value is the number as written in the quote. However the code requires a valid decimal. Let me use \"14776353000\".",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"As of the date stated on the cover page, {fig:0} of common stock were issued and outstanding.\", \"figures\": [{\"label\": \"Shares of common stock issued and outstanding\", \"value\": \"14776353000\", \"unit\": \"shares\", \"status\": \"verified\", \"claimed_by\": \"agent\", \"provenance\": {\"kind\": \"text\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"Cover\", \"tag\": null, \"period_start\": null, \"period_end\": null, \"dimensions\": {}, \"quote\": \"14,776,353,000 shares of common stock were issued and outstanding as of October 17, 2025.\", \"inputs\": [], \"formula\": null}}], \"notes\": []}",
+     "tool_call_id": "call-1f362bf8-163d-4cb9-a64a-ded44f000d76",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 4241,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 4096,
+    "output_tokens": 273,
+    "output_reasoning_tokens": 42,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 42,
+     "image_tokens": 0
+    },
+    "cost": "0.0002769732"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:22:42.188023Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "DeepInfra",
+    "cost": 0.0002282448,
+    "upstream_inference_cost": 0.0002282448,
+    "upstream_inference_prompt_cost": 5.62548e-05,
+    "upstream_inference_completions_cost": 0.00017199,
+    "is_byok": false,
+    "service_tier": "priority",
+    "timestamp": "2026-11-12T09:22:39Z"
+   },
+   "provider_response_id": "gen-1794475359-2LbEeuSY50ectQ7nLolj",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-f0c2-7492-a8e1-fc0818c294ae",
+   "conversation_id": "01a1cf10-f0c2-7492-a8e1-fc09394adaf0",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

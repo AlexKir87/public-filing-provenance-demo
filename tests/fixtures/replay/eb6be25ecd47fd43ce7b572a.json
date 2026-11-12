@@ -1,0 +1,79 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "This question is about Microsoft, another company. I should say I can only answer about this one filing.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"I can only answer questions about this one filing, the 10-K of Apple Inc. for the fiscal year ended in September 2025, and I cannot use any other company's filing.\", \"figures\": [], \"notes\": []}",
+     "tool_call_id": "call_633b6cfaf38d4a21a8dbd54b0c436b3d",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 5344,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 5248,
+    "output_tokens": 130,
+    "output_reasoning_tokens": 26,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 26,
+     "image_tokens": 0
+    },
+    "cost": "0.0001514016"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:24:30.285637Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Wafer",
+    "cost": 0.000165716,
+    "upstream_inference_cost": 0.000165716,
+    "upstream_inference_prompt_cost": 8.1216e-05,
+    "upstream_inference_completions_cost": 8.45e-05,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:24:29Z"
+   },
+   "provider_response_id": "gen-1794475469-lImK23NWwMBy1jsWMjpd",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf12-aa8b-7131-95ed-a777f47a9b56",
+   "conversation_id": "01a1cf12-aa8b-7131-95ed-a77897a4eed5",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

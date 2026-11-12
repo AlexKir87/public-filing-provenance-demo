@@ -1,0 +1,34 @@
+{
+  "currency": "USD",
+  "note": "USD per 1M tokens, copied from the provider price page. An entry needs input, output, source_url (https) and checked_on (YYYY-MM-DD); cached_input is optional. Empty at kickoff: never fill a price from memory.",
+  "models": {
+    "anthropic/claude-haiku-5.5": {
+      "input": 0.1,
+      "output": 0.5,
+      "cached_input": 0.01,
+      "source_url": "https://openrouter.ai/api/v1/models",
+      "checked_on": "2026-11-12"
+    },
+    "google/gemini-3.8-flash": {
+      "input": 0.825,
+      "output": 4.125,
+      "cached_input": 0.0825,
+      "source_url": "https://openrouter.ai/api/v1/models",
+      "checked_on": "2026-11-12"
+    },
+    "anthropic/claude-sonnet-5.5": {
+      "input": 2.0,
+      "output": 10.0,
+      "cached_input": 0.1,
+      "source_url": "https://openrouter.ai/api/v1/models",
+      "checked_on": "2026-11-12"
+    },
+    "deepseek/deepseek-v4.1-flash": {
+      "input": 0.022,
+      "output": 0.4,
+      "cached_input": 0.004,
+      "source_url": "https://openrouter.ai/api/v1/models",
+      "checked_on": "2026-11-12"
+    }
+  }
+}

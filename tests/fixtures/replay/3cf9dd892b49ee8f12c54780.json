@@ -1,0 +1,316 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "The user wants iPhone net sales for fiscal 2025. This is a product breakdown with dimensions. Let me look up the fact.\n\nLet me search for the tag. Apple uses \"RevenueFromContractWithCustomerExcludingAssessedTax\" with product dimension. Let me look up.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_end\": \"2025-09-27\", \"dimensions\": {\"us-gaap:StatementBusinessSegmentsAxis\": \"aapl:IPhoneMember\"}}",
+     "tool_call_id": "call-44cd4b7a-637c-4879-8c1c-c478b1f55239",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    },
+    {
+     "tool_name": "search_filing_text",
+     "args": "{\"query\": \"iPhone net sales\"}",
+     "tool_call_id": "call-b628186c-a6c5-4fe6-94b3-8d397e9c3a7f",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3734,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3712,
+    "output_tokens": 204,
+    "output_reasoning_tokens": 57,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 57,
+     "image_tokens": 0
+    },
+    "cost": "0.0001915704"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:25.136334Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "DeepInfra",
+    "cost": 0.0001043504,
+    "upstream_inference_cost": 0.0001043504,
+    "upstream_inference_prompt_cost": 1.86704e-05,
+    "upstream_inference_completions_cost": 8.568e-05,
+    "is_byok": false,
+    "service_tier": "default",
+    "timestamp": "2026-11-12T09:23:23Z"
+   },
+   "provider_response_id": "gen-1794475403-XfRlN4Gn3tjfJEarCtwX",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-a5b2-7544-a1fc-fe51252b47fa",
+   "conversation_id": "01a1cf11-a5b2-7544-a1fc-fe52ffd85eb5",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "Let me look at the income statement lines and find the right tag/dimension. Let me use list_statement_lines for income.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "list_statement_lines",
+     "args": "{\"statement\": \"income\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "call-3c87aa30-004c-46e4-917d-31200ef1ef68",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "call-01605ef1-f5ea-4da6-9c56-483c2603a018",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 4643,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3840,
+    "output_tokens": 156,
+    "output_reasoning_tokens": 26,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 26,
+     "image_tokens": 0
+    },
+    "cost": "0.000315798"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:27.170482Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "DeepInfra",
+    "cost": 0.000194068,
+    "upstream_inference_cost": 0.000194068,
+    "upstream_inference_prompt_cost": 0.000128548,
+    "upstream_inference_completions_cost": 6.552e-05,
+    "is_byok": false,
+    "service_tier": "default",
+    "timestamp": "2026-11-12T09:23:25Z"
+   },
+   "provider_response_id": "gen-1794475405-j1ueeTaytWwm4gp3V4t5",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-a5b2-7544-a1fc-fe51252b47fa",
+   "conversation_id": "01a1cf11-a5b2-7544-a1fc-fe52ffd85eb5",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "I need the iPhone product breakdown. Apple reports product categories in a table with dimensions. The axis is likely \"us-gaap:ProductOrServiceAxis\" or a custom. Let me search for the tag used. Apple uses \"srt:ProductOrServiceAxis\" with members like \"aapl:IPhoneMember\". Let me try.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_end\": \"2025-09-27\", \"dimensions\": {\"srt:ProductOrServiceAxis\": \"aapl:IPhoneMember\"}}",
+     "tool_call_id": "call-e549d030-24c9-407e-822c-ac34da0292c3",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 5592,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 4736,
+    "output_tokens": 183,
+    "output_reasoning_tokens": 71,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 71,
+     "image_tokens": 0
+    },
+    "cost": "0.0003533712"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:29.410769Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "DeepInfra",
+    "cost": 0.0002165912,
+    "upstream_inference_cost": 0.0002165912,
+    "upstream_inference_prompt_cost": 0.0001397312,
+    "upstream_inference_completions_cost": 7.686e-05,
+    "is_byok": false,
+    "service_tier": "default",
+    "timestamp": "2026-11-12T09:23:27Z"
+   },
+   "provider_response_id": "gen-1794475407-0GJT1l04rdCGrLhrnvc3",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-a5b2-7544-a1fc-fe51252b47fa",
+   "conversation_id": "01a1cf11-a5b2-7544-a1fc-fe52ffd85eb5",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "iPhone net sales = $209,586,000,000. Answer.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"In the fiscal year ended in September, iPhone net sales were {fig:0}.\", \"figures\": [{\"label\": \"iPhone net sales\", \"value\": \"209586000000\", \"unit\": \"USD\", \"status\": \"verified\", \"claimed_by\": \"agent\", \"provenance\": {\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"XBRL\", \"tag\": \"RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {\"srt:ProductOrServiceAxis\": \"aapl:IPhoneMember\"}}}], \"notes\": [\"Figure is for the full fiscal year only.\"]}",
+     "tool_call_id": "call-8dcb9c2c-3556-4fdd-adf9-bad94af19ff4",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 5987,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 5760,
+    "output_tokens": 250,
+    "output_reasoning_tokens": 15,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 15,
+     "image_tokens": 0
+    },
+    "cost": "0.000281862"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:32.223468Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "DeepInfra",
+    "cost": 0.000160972,
+    "upstream_inference_cost": 0.000160972,
+    "upstream_inference_prompt_cost": 5.5972e-05,
+    "upstream_inference_completions_cost": 0.000105,
+    "is_byok": false,
+    "service_tier": "default",
+    "timestamp": "2026-11-12T09:23:29Z"
+   },
+   "provider_response_id": "gen-1794475409-O0YS7KPIRLpz3tibx4Ek",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-a5b2-7544-a1fc-fe51252b47fa",
+   "conversation_id": "01a1cf11-a5b2-7544-a1fc-fe52ffd85eb5",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

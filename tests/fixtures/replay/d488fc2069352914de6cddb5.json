@@ -1,0 +1,288 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "The user asks about net sales in fiscal 2024. This filing covers fiscal year ended 2025-09-27 but typically includes prior year figures. Let me look up NetSales / RevenueFromContractWithCustomerExcludingAssessedTax.\n\nApple uses \"RevenueFromContractWithCustomerExcludingAssessedTax\" for net sales. Let me look up.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "list_statement_lines",
+     "args": "{\"statement\": \"income\"}",
+     "tool_call_id": "call_068fa02f22ad47f5842cbd6879a57b27",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 5348,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 5248,
+    "output_tokens": 114,
+    "output_reasoning_tokens": 78,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 78,
+     "image_tokens": 0
+    },
+    "cost": "0.0001388016"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:43.025072Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Wafer",
+    "cost": 0.000156076,
+    "upstream_inference_cost": 0.000156076,
+    "upstream_inference_prompt_cost": 8.1976e-05,
+    "upstream_inference_completions_cost": 7.41e-05,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:42Z"
+   },
+   "provider_response_id": "gen-1794475422-msyi67HQhXJ3QQhKnIr6",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-f0b2-7296-9e3b-b23dd7a0548e",
+   "conversation_id": "01a1cf11-f0b2-7296-9e3b-b23e29391a23",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "Let me look up net sales. Apple uses \"RevenueFromContractWithCustomerExcludingAssessedTax\".",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_end\": \"></invoke_results\"}",
+     "tool_call_id": "call_9d9b8efd31b04a26ae37baacf0253c6c",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 6037,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 5376,
+    "output_tokens": 98,
+    "output_reasoning_tokens": 23,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 23,
+     "image_tokens": 0
+    },
+    "cost": "0.0002437092"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:43.795448Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Wafer",
+    "cost": 0.000253802,
+    "upstream_inference_cost": 0.000253802,
+    "upstream_inference_prompt_cost": 0.000190102,
+    "upstream_inference_completions_cost": 6.37e-05,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:43Z"
+   },
+   "provider_response_id": "gen-1794475423-IuI1bzp0ctsHZEN1FXQD",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-f0b2-7296-9e3b-b23dd7a0548e",
+   "conversation_id": "01a1cf11-f0b2-7296-9e3b-b23e29391a23",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "Let me redo with no period_end.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\"}",
+     "tool_call_id": "call_eba37c2a78f04e0f98505306191f1bc5",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 6190,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 896,
+    "output_tokens": 65,
+    "output_reasoning_tokens": 8,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 8,
+     "image_tokens": 0
+    },
+    "cost": "0.0011701032"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:44.450718Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Wafer",
+    "cost": 0.001058862,
+    "upstream_inference_cost": 0.001058862,
+    "upstream_inference_prompt_cost": 0.001016612,
+    "upstream_inference_completions_cost": 4.225e-05,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:43Z"
+   },
+   "provider_response_id": "gen-1794475423-pQe30NS6k79uiU8EehgN",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-f0b2-7296-9e3b-b23dd7a0548e",
+   "conversation_id": "01a1cf11-f0b2-7296-9e3b-b23e29391a23",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "\n\n",
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "citations": null,
+     "part_kind": "text"
+    },
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"Total net sales for fiscal year ended in September of the prior year were {fig:0}.\", \"figures\": [{\"label\": \"Total net sales, prior fiscal year\", \"value\": \"391035000000\", \"unit\": \"USD\", \"status\": \"verified\", \"provenance\": {\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"XBRL\", \"tag\": \"RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_start\": \"2023-10-01\", \"period_end\": \"2024-09-28\", \"dimensions\": {}}, \"claimed_by\": \"agent\"}], \"notes\": []}",
+     "tool_call_id": "call_1cd25c52e5a0462c8dc89165ea432145",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 6735,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 6144,
+    "output_tokens": 214,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.0003296748"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:45.576204Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Wafer",
+    "cost": 0.000325118,
+    "upstream_inference_cost": 0.000325118,
+    "upstream_inference_prompt_cost": 0.000186018,
+    "upstream_inference_completions_cost": 0.0001391,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:44Z"
+   },
+   "provider_response_id": "gen-1794475424-cf0pHqaLscYxKOiminkv",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-f0b2-7296-9e3b-b23dd7a0548e",
+   "conversation_id": "01a1cf11-f0b2-7296-9e3b-b23e29391a23",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

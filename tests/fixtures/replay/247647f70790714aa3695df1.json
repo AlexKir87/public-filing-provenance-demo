@@ -1,0 +1,140 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "Let me look up net income.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:NetIncomeLoss\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "call-25cccb87-8b17-4623-ab2f-abd038903772",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3731,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3712,
+    "output_tokens": 78,
+    "output_reasoning_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 7,
+     "image_tokens": 0
+    },
+    "cost": "0.0000851004"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:11.311852Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "DeepInfra",
+    "cost": 7.65156e-05,
+    "upstream_inference_cost": 7.65156e-05,
+    "upstream_inference_prompt_cost": 2.73756e-05,
+    "upstream_inference_completions_cost": 4.914e-05,
+    "is_byok": false,
+    "service_tier": "priority",
+    "timestamp": "2026-11-12T09:23:09Z"
+   },
+   "provider_response_id": "gen-1794475389-3fCBEX7SUhKko4ieaSCb",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-7289-710d-833c-71e4677d438f",
+   "conversation_id": "01a1cf11-7289-710d-833c-71e521681ac7",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"Net income for the fiscal year ended in September was {fig:0}.\", \"figures\": [{\"label\": \"Net income\", \"value\": \"112010000000\", \"unit\": \"USD\", \"status\": \"verified\", \"claimed_by\": \"agent\", \"provenance\": {\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"XBRL\", \"tag\": \"NetIncomeLoss\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {}}}], \"notes\": []}",
+     "tool_call_id": "call-052a11a6-b669-439b-850c-fd24ba45901f",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3977,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3712,
+    "output_tokens": 198,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.0002375604"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:13.073885Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "DeepInfra",
+    "cost": 0.0002037756,
+    "upstream_inference_cost": 0.0002037756,
+    "upstream_inference_prompt_cost": 7.90356e-05,
+    "upstream_inference_completions_cost": 0.00012474,
+    "is_byok": false,
+    "service_tier": "priority",
+    "timestamp": "2026-11-12T09:23:11Z"
+   },
+   "provider_response_id": "gen-1794475391-y8t8mUjiJ3afzHEKPBzw",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-7289-710d-833c-71e4677d438f",
+   "conversation_id": "01a1cf11-7289-710d-833c-71e521681ac7",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

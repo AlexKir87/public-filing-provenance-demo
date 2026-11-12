@@ -1,0 +1,160 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "Let me look up the net sales figure.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "call_c5d78520594b4ad586cdc14bd70120fa",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    },
+    {
+     "tool_name": "list_statement_lines",
+     "args": "{\"statement\": \"income\"}",
+     "tool_call_id": "call_9111f70a60484c22be612b87fd505a5e",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 5347,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 5248,
+    "output_tokens": 119,
+    "output_reasoning_tokens": 9,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 9,
+     "image_tokens": 0
+    },
+    "cost": "0.0001427916"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:07.078166Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Wafer",
+    "cost": 0.000166986,
+    "upstream_inference_cost": 0.000166986,
+    "upstream_inference_prompt_cost": 9.9513e-05,
+    "upstream_inference_completions_cost": 6.7473e-05,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:06Z"
+   },
+   "provider_response_id": "gen-1794475386-oFA3olwGdOIHfTLKpoxQ",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-6449-73d8-ae71-2399ac63457e",
+   "conversation_id": "01a1cf11-6449-73d8-ae71-239a7a32ac72",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "Total net sales = RevenueFromContractWithCustomerExcludingAssessedTax ... but actually Apple's total net sales tag might be different. Let me check \u2014 the value 416161000000 is total net sales for fiscal 2025. Actually Apple uses \"RevenueFromContractWithCustomerExcludingAssessedTax\" for total net sales. Yes.\n\nAnswer.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"Total net sales for the fiscal year ended in September were {fig:0}.\", \"figures\": [{\"label\": \"Total net sales\", \"value\": \"416161000000\", \"unit\": \"USD\", \"status\": \"verified\", \"provenance\": {\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"XBRL\", \"tag\": \"RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {}}, \"claimed_by\": \"agent\"}], \"notes\": []}",
+     "tool_call_id": "call_37910b57e37a4b06a5e350f327bb2608",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 6218,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 5376,
+    "output_tokens": 279,
+    "output_reasoning_tokens": 80,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 80,
+     "image_tokens": 0
+    },
+    "cost": "0.0004337592"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:09.495798Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Wafer",
+    "cost": 0.000297903,
+    "upstream_inference_cost": 0.000297903,
+    "upstream_inference_prompt_cost": 0.00013971,
+    "upstream_inference_completions_cost": 0.000158193,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:07Z"
+   },
+   "provider_response_id": "gen-1794475387-whd7fuOho0q0VOfnhFvi",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-6449-73d8-ae71-2399ac63457e",
+   "conversation_id": "01a1cf11-6449-73d8-ae71-239a7a32ac72",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

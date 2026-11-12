@@ -1,0 +1,12 @@
+{
+  "provider": "openrouter",
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "temperature": 0,
+  "max_tokens": 600,
+  "usd_per_mtok": {"input": 0.30, "output": 1.20},
+  "openrouter": {
+    "data_collection": "deny",
+    "zdr": true,
+    "max_price": {"prompt": 0.30, "completion": 1.20}
+  }
+}

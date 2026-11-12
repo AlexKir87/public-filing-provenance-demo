@@ -1,0 +1,5 @@
+pytest
+ruff
+mypy
+pip-audit
+anthropic

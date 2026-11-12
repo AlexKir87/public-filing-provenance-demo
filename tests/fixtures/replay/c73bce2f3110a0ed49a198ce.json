@@ -1,0 +1,150 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "Let me look up basic EPS.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:EarningsPerShareBasic\"}",
+     "tool_call_id": "chatcmpl-tool-8cf3e27adf9ea6c3",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3732,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 896,
+    "output_tokens": 57,
+    "output_reasoning_tokens": 7,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 7,
+     "image_tokens": 0
+    },
+    "cost": "0.0006472032"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:21:42.949196Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Cohere",
+    "cost": 0.000593328,
+    "upstream_inference_cost": 0.000593328,
+    "upstream_inference_prompt_cost": 0.000555708,
+    "upstream_inference_completions_cost": 3.762e-05,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:21:42Z"
+   },
+   "provider_response_id": "gen-1794475302-CHqLViI85a3l3q4X2vFv",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-1d51-76a0-9709-4e11f809a61e",
+   "conversation_id": "01a1cf10-1d51-76a0-9709-4e121adc5816",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "Basic EPS for fiscal 2025 (period 2024-09-29 to 2025-09-27) is 7.49 USD/shares.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"Basic earnings per share for the fiscal year was {fig:0}.\", \"figures\": [{\"label\": \"Basic earnings per share\", \"value\": 7.49, \"unit\": \"USD/shares\", \"status\": \"verified\", \"claimed_by\": \"agent\", \"provenance\": {\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"XBRL\", \"tag\": \"EarningsPerShareBasic\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {}}}], \"notes\": []}",
+     "tool_call_id": "chatcmpl-tool-a36bb46488359e79",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 4245,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3712,
+    "output_tokens": 238,
+    "output_reasoning_tokens": 35,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 35,
+     "image_tokens": 0
+    },
+    "cost": "0.0003274404"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:21:44.764269Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Cohere",
+    "cost": 0.000272151,
+    "upstream_inference_cost": 0.000272151,
+    "upstream_inference_prompt_cost": 0.000115071,
+    "upstream_inference_completions_cost": 0.00015708,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:21:42Z"
+   },
+   "provider_response_id": "gen-1794475302-yK2dTCoSI2WRLDdbUQPD",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-1d51-76a0-9709-4e11f809a61e",
+   "conversation_id": "01a1cf10-1d51-76a0-9709-4e121adc5816",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

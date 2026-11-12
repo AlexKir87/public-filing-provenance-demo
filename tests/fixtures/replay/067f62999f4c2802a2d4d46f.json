@@ -1,0 +1,126 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:CashAndCashEquivalentsAtCarryingValue\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "call_07d1e87c6308474a8dbd56ce",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3739,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 768,
+    "output_tokens": 77,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.0006918156"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:21:52.620737Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Alibaba",
+    "cost": 0.0006918156,
+    "upstream_inference_cost": 0.0006918156,
+    "upstream_inference_prompt_cost": 0.0006271356,
+    "upstream_inference_completions_cost": 6.468e-05,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:21:51Z"
+   },
+   "provider_response_id": "gen-1794475311-ago4FWsJeKHqQbVclUD4",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-4064-76a3-adc3-21596e347f05",
+   "conversation_id": "01a1cf10-4064-76a3-adc3-215a7be47275",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"At the end of the fiscal year ended in September (the balance sheet date), Apple reported cash and cash equivalents of {fig:0}.\", \"figures\": [{\"label\": \"Cash and cash equivalents at fiscal year end\", \"value\": \"35934000000\", \"unit\": \"USD\", \"status\": \"verified\", \"provenance\": {\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"XBRL\", \"tag\": \"CashAndCashEquivalentsAtCarryingValue\", \"period_start\": null, \"period_end\": \"2025-09-27\", \"dimensions\": {}, \"quote\": null, \"inputs\": [], \"formula\": null}, \"claimed_by\": \"agent\"}], \"notes\": []}",
+     "tool_call_id": "call_f5a5f0570b25495792095bfb",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3989,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3584,
+    "output_tokens": 231,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.0002941428"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:21:54.271314Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Alibaba",
+    "cost": 0.0002941428,
+    "upstream_inference_cost": 0.0002941428,
+    "upstream_inference_prompt_cost": 0.0001001028,
+    "upstream_inference_completions_cost": 0.00019404,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:21:52Z"
+   },
+   "provider_response_id": "gen-1794475312-jBp52qxHN2VUctgWK1rQ",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-4064-76a3-adc3-21596e347f05",
+   "conversation_id": "01a1cf10-4064-76a3-adc3-215a7be47275",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

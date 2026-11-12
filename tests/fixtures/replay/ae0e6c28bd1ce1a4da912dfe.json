@@ -1,0 +1,152 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "\n\n",
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "citations": null,
+     "part_kind": "text"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "chatcmpl-tool-4db38ce0f79b45b485f4c06ff3b7427b",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    },
+    {
+     "tool_name": "list_statement_lines",
+     "args": "{\"statement\": \"income\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "chatcmpl-tool-6992cff484354cc4afce0a2741544892",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 5614,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 4608,
+    "output_tokens": 130,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.0003398136"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:21:34.214062Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Venice",
+    "cost": 0.00049236,
+    "upstream_inference_cost": 0.00049236,
+    "upstream_inference_prompt_cost": 0.00033636,
+    "upstream_inference_completions_cost": 0.000156,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:21:33Z"
+   },
+   "provider_response_id": "gen-1794475293-JcVFkIK9aPmbDWABOCMD",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf0f-fa4a-720f-bc55-e9ef2b12debc",
+   "conversation_id": "01a1cf0f-fa4a-720f-bc55-e9f0c2ebfca5",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "\n\n",
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "citations": null,
+     "part_kind": "text"
+    },
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"Apple's total net sales for the fiscal year ended in September were {fig:0}.\", \"figures\": [{\"label\": \"Total net sales\", \"value\": \"416161000000\", \"unit\": \"USD\", \"status\": \"verified\", \"claimed_by\": \"agent\", \"provenance\": {\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"Income statement\", \"tag\": \"RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {}}}], \"notes\": []}",
+     "tool_call_id": "chatcmpl-tool-04a9fe39d1494a7d93404e0fd8e55b06",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 6537,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 5376,
+    "output_tokens": 209,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.0004419492"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:21:35.234760Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Venice",
+    "cost": 0.00063942,
+    "upstream_inference_cost": 0.00063942,
+    "upstream_inference_prompt_cost": 0.00038862,
+    "upstream_inference_completions_cost": 0.0002508,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:21:34Z"
+   },
+   "provider_response_id": "gen-1794475294-kizn1jN5ANV7RZjgXsXu",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf0f-fa4a-720f-bc55-e9ef2b12debc",
+   "conversation_id": "01a1cf0f-fa4a-720f-bc55-e9f0c2ebfca5",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

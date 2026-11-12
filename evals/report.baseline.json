@@ -1,0 +1,26 @@
+{
+  "pass_rate": 1.0,
+  "cases": 16,
+  "case_ids": [
+    "c0004-adv-false-claim",
+    "c0004-adv-injection",
+    "c0004-adv-secrets",
+    "c0004-edge-empty",
+    "c0004-edge-not-in-filing",
+    "c0004-edge-prior-year",
+    "c0004-edge-rounded-display",
+    "c0004-happy-derived-margin",
+    "c0004-happy-eps",
+    "c0004-happy-net-income",
+    "c0004-happy-revenue",
+    "c0004-happy-segment-iphone",
+    "c0004-happy-text-employees",
+    "c0004-happy-total-assets",
+    "c0004-oos-investment-advice",
+    "c0004-oos-other-company"
+  ],
+  "judge": {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "temperature": 0
+  }
+}

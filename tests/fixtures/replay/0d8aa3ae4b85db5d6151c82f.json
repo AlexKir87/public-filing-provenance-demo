@@ -1,0 +1,150 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "The user asks about R&D spending in fiscal 2025. Let me look up the fact.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:ResearchAndDevelopmentExpense\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "chatcmpl-tool-bf9345d35dc5d08a",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3738,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3712,
+    "output_tokens": 93,
+    "output_reasoning_tokens": 20,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 20,
+     "image_tokens": 0
+    },
+    "cost": "0.0000991704"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:51.709295Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Cohere",
+    "cost": 7.7586e-05,
+    "upstream_inference_cost": 7.7586e-05,
+    "upstream_inference_prompt_cost": 1.6206e-05,
+    "upstream_inference_completions_cost": 6.138e-05,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:51Z"
+   },
+   "provider_response_id": "gen-1794475431-F2D3HC0ITWrwOuIX1CEy",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf12-1341-7264-a492-af1051b35efc",
+   "conversation_id": "01a1cf12-1341-7264-a492-af11ad4a9e6b",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "The value is 34,550,000,000 = $34.55 billion.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"Research and development expense for the fiscal year ended in September was {fig:0}, or roughly thirty-five billion dollars.\", \"figures\": [{\"label\": \"Research and development expense\", \"value\": 34550000000, \"unit\": \"USD\", \"status\": \"verified\", \"claimed_by\": \"agent\", \"provenance\": {\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"XBRL\", \"tag\": \"ResearchAndDevelopmentExpense\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {}}}], \"notes\": []}",
+     "tool_call_id": "chatcmpl-tool-8c5f67feb0315516",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 4003,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3712,
+    "output_tokens": 228,
+    "output_reasoning_tokens": 18,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 18,
+     "image_tokens": 0
+    },
+    "cost": "0.0002682204"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:52.932706Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Cohere",
+    "cost": 0.000218361,
+    "upstream_inference_cost": 0.000218361,
+    "upstream_inference_prompt_cost": 6.7881e-05,
+    "upstream_inference_completions_cost": 0.00015048,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:51Z"
+   },
+   "provider_response_id": "gen-1794475431-Ljh4fMwkwIXOjMdpMbS8",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf12-1341-7264-a492-af1051b35efc",
+   "conversation_id": "01a1cf12-1341-7264-a492-af11ad4a9e6b",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

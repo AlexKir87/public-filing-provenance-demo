@@ -1,0 +1,227 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "Let me find Mac net sales. Apple reports product net sales by category with dimensions. Let me search.\n\nMac net sales tag: us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax with dimension ProductMember = MacMember. Let me look.\n\nLet me call lookup_fact.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "chatcmpl-tool-472e8c044d5049d6af92712af92bfaf1",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    },
+    {
+     "tool_name": "list_statement_lines",
+     "args": "{\"statement\": \"income\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "chatcmpl-tool-216a2c68cf3a4e399b77755a321587b5",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 5612,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 5376,
+    "output_tokens": 190,
+    "output_reasoning_tokens": 60,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 60,
+     "image_tokens": 0
+    },
+    "cost": "0.0002317392"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:22:21.607162Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Venice",
+    "cost": 0.00033912,
+    "upstream_inference_cost": 0.00033912,
+    "upstream_inference_prompt_cost": 0.00011112,
+    "upstream_inference_completions_cost": 0.000228,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:22:20Z"
+   },
+   "provider_response_id": "gen-1794475340-GLtkZ4tTl0NKVkggV7kL",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-b24c-7743-bc17-6e18ad03a82f",
+   "conversation_id": "01a1cf10-b24c-7743-bc17-6e1953bbb385",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "I need the Mac product dimension. Let me look up with dimensions. I need the exact axis/member names. Let me try lookup_fact with dimensions {\"us-gaap:StatementBusinessSegmentsAxis\": \"aapl:MacMember\"}? Actually Apple uses srt:ProductOrServiceAxis with member aapl:MacMember.\n\nLet me just call with dimensions guess.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_end\": \"2025-09-27\", \"dimensions\": {\"srt:ProductOrServiceAxis\": \"aapl:MacMember\"}}",
+     "tool_call_id": "chatcmpl-tool-101430e125214485bcd76518e8409906",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 6595,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 5376,
+    "output_tokens": 187,
+    "output_reasoning_tokens": 77,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 77,
+     "image_tokens": 0
+    },
+    "cost": "0.0004356492"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:22:22.738761Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Venice",
+    "cost": 0.00063042,
+    "upstream_inference_cost": 0.00063042,
+    "upstream_inference_prompt_cost": 0.00040602,
+    "upstream_inference_completions_cost": 0.0002244,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:22:21Z"
+   },
+   "provider_response_id": "gen-1794475341-s5JJQm3L2FPAIEEpPKph",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-b24c-7743-bc17-6e18ad03a82f",
+   "conversation_id": "01a1cf10-b24c-7743-bc17-6e1953bbb385",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "content": "\n\n",
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "citations": null,
+     "part_kind": "text"
+    },
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"Mac net sales for the fiscal year ended in September were {fig:0}.\", \"figures\": [{\"label\": \"Mac net sales\", \"value\": \"33708000000\", \"unit\": \"USD\", \"status\": \"verified\", \"claimed_by\": \"agent\", \"provenance\": {\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"XBRL\", \"tag\": \"RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {\"srt:ProductOrServiceAxis\": \"aapl:MacMember\"}}}], \"notes\": [\"The figure covers the full fiscal year, not a single quarter.\"]}",
+     "tool_call_id": "chatcmpl-tool-9a9a53ee68844a4e90bb5884d66c7fb3",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 6990,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 6400,
+    "output_tokens": 236,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.00034902"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:22:25.121556Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Venice",
+    "cost": 0.0005082,
+    "upstream_inference_cost": 0.0005082,
+    "upstream_inference_prompt_cost": 0.000225,
+    "upstream_inference_completions_cost": 0.0002832,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:22:22Z"
+   },
+   "provider_response_id": "gen-1794475342-kRox9CbBM9Iy471CCR2W",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-b24c-7743-bc17-6e18ad03a82f",
+   "conversation_id": "01a1cf10-b24c-7743-bc17-6e1953bbb385",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

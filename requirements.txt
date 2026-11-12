@@ -1,0 +1,4 @@
+pytest
+pydantic>=2.7,<3
+edgartools>=6.0,<7
+pydantic-ai-slim[openrouter,web]>=2.60,<3

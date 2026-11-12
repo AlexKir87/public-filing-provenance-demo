@@ -1,0 +1,207 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "Let me look up gross profit and net sales.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:GrossProfit\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "call_e03176df73004c27aa4e9293",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "call_857f296fccbb451d9532abd9",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3733,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3584,
+    "output_tokens": 146,
+    "output_reasoning_tokens": 10,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 10,
+     "image_tokens": 0
+    },
+    "cost": "0.0001689828"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:38.014884Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Alibaba",
+    "cost": 0.0001689828,
+    "upstream_inference_cost": 0.0001689828,
+    "upstream_inference_prompt_cost": 4.63428e-05,
+    "upstream_inference_completions_cost": 0.00012264,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:36Z"
+   },
+   "provider_response_id": "gen-1794475416-Q4D6Gk1Wws1IYmBJk9Fb",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-da62-7436-88c7-b7250bbde68e",
+   "conversation_id": "01a1cf11-da63-7630-be19-980ea19d0ef7",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "compute_ratio",
+     "args": "{\"numerator\": {\"tag\": \"GrossProfit\", \"taxonomy\": \"us-gaap\", \"value\": \"195201000000\", \"unit\": \"USD\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {}, \"accession\": \"0000320193-25-000079\"}, \"denominator\": {\"tag\": \"RevenueFromContractWithCustomerExcludingAssessedTax\", \"taxonomy\": \"us-gaap\", \"value\": \"416161000000\", \"unit\": \"USD\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {}, \"accession\": \"0000320193-25-000079\"}, \"kind\": \"ratio\"}",
+     "tool_call_id": "call_fdc079a404864ababad7be2d",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 4225,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3584,
+    "output_tokens": 233,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.0003453828"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:39.639901Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Alibaba",
+    "cost": 0.0003453828,
+    "upstream_inference_cost": 0.0003453828,
+    "upstream_inference_prompt_cost": 0.0001496628,
+    "upstream_inference_completions_cost": 0.00019572,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:38Z"
+   },
+   "provider_response_id": "gen-1794475418-dtJa7sKIy2aSeLvs13kf",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-da62-7436-88c7-b7250bbde68e",
+   "conversation_id": "01a1cf11-da63-7630-be19-980ea19d0ef7",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"The gross margin for the fiscal year ended in September was {fig:0}, calculated as gross profit divided by net sales.\", \"figures\": [{\"label\": \"Gross margin\", \"value\": \"0.469052\", \"unit\": \"pure\", \"status\": \"verified\", \"provenance\": {\"kind\": \"derived\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"derived\", \"tag\": null, \"period_start\": null, \"period_end\": null, \"dimensions\": {}, \"quote\": null, \"inputs\": [{\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"XBRL\", \"tag\": \"GrossProfit\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {}, \"quote\": null, \"inputs\": [], \"formula\": null}, {\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"XBRL\", \"tag\": \"RevenueFromContractWithCustomerExcludingAssessedTax\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {}, \"quote\": null, \"inputs\": [], \"formula\": null}], \"formula\": \"numerator / denominator\"}, \"claimed_by\": \"agent\"}], \"notes\": [\"The figure covers the full fiscal year only, not a single quarter.\"]}",
+     "tool_call_id": "call_89826051cfa34ec3ac180ebb",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 4723,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 4096,
+    "output_tokens": 401,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.0004857132"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:41.743524Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Alibaba",
+    "cost": 0.0004857132,
+    "upstream_inference_cost": 0.0004857132,
+    "upstream_inference_prompt_cost": 0.0001488732,
+    "upstream_inference_completions_cost": 0.00033684,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:39Z"
+   },
+   "provider_response_id": "gen-1794475419-OcUj9Ka5LML2mJCRiCHo",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-da62-7436-88c7-b7250bbde68e",
+   "conversation_id": "01a1cf11-da63-7630-be19-980ea19d0ef7",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

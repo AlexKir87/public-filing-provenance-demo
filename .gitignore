@@ -1,0 +1,9 @@
+.cache/
+__pycache__/
+*.pyc
+.venv/
+ops/trace.jsonl
+ops/usage.jsonl
+ops/spend.jsonl
+evals/traces/
+.env

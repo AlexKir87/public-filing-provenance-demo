@@ -1,0 +1,140 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "The user asks about payments for property, plant and equipment (capital expenditures) in fiscal 2025. Let me look at the cash flow statement.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "lookup_fact",
+     "args": "{\"concept\": \"us-gaap:PaymentsToAcquirePropertyPlantAndEquipment\", \"period_end\": \"2025-09-27\"}",
+     "tool_call_id": "call-dbb201b7-446a-4d45-a0d3-29825d20d4bc",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3738,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 896,
+    "output_tokens": 107,
+    "output_reasoning_tokens": 30,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 30,
+     "image_tokens": 0
+    },
+    "cost": "0.0006904632"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:21:59.108509Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "DeepInfra",
+    "cost": 0.0004465832,
+    "upstream_inference_cost": 0.0004465832,
+    "upstream_inference_prompt_cost": 0.0004016432,
+    "upstream_inference_completions_cost": 4.494e-05,
+    "is_byok": false,
+    "service_tier": "default",
+    "timestamp": "2026-11-12T09:21:57Z"
+   },
+   "provider_response_id": "gen-1794475317-EtDqz4b0hDu9RJaTInJh",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-595b-7361-9265-52a92335c946",
+   "conversation_id": "01a1cf10-595b-7361-9265-52aa68aa59c2",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"In fiscal year ended in September, Apple paid {fig:0} for property, plant and equipment (payments to acquire PP&E).\", \"figures\": [{\"label\": \"Payments to acquire property, plant and equipment\", \"value\": \"12715000000\", \"unit\": \"USD\", \"status\": \"verified\", \"claimed_by\": \"agent\", \"provenance\": {\"kind\": \"xbrl\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"XBRL\", \"tag\": \"PaymentsToAcquirePropertyPlantAndEquipment\", \"period_start\": \"2024-09-29\", \"period_end\": \"2025-09-27\", \"dimensions\": {}}}], \"notes\": []}",
+     "tool_call_id": "call-ca84493d-a217-4728-8d7b-c121ee3cd745",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 4025,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3840,
+    "output_tokens": 224,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.000243138"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:22:02.284292Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "DeepInfra",
+    "cost": 0.000136108,
+    "upstream_inference_cost": 0.000136108,
+    "upstream_inference_prompt_cost": 4.2028e-05,
+    "upstream_inference_completions_cost": 9.408e-05,
+    "is_byok": false,
+    "service_tier": "default",
+    "timestamp": "2026-11-12T09:21:59Z"
+   },
+   "provider_response_id": "gen-1794475319-2G6zYncDkmRspeKmVTah",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf10-595b-7361-9265-52a92335c946",
+   "conversation_id": "01a1cf10-595b-7361-9265-52aa68aa59c2",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}

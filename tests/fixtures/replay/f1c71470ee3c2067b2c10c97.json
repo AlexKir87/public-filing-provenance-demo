@@ -1,0 +1,197 @@
+{
+ "prompt_version": "p-e8bc3b5638ee",
+ "models": [
+  "deepseek/deepseek-v4.1-flash"
+ ],
+ "responses": [
+  {
+   "parts": [
+    {
+     "content": "The user asks about the number of full-time equivalent employees at the end of fiscal 2025. This is a text figure in the filing (Item 1). Let me search.",
+     "id": null,
+     "signature": null,
+     "provider_name": "openrouter",
+     "provider_details": {
+      "format": "unknown",
+      "index": 0,
+      "type": "reasoning.text"
+     },
+     "part_kind": "thinking"
+    },
+    {
+     "tool_name": "search_filing_text",
+     "args": "{\"query\": \"full-time equivalent employees\"}",
+     "tool_call_id": "chatcmpl-tool-81b6d7c82dfbf928",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3739,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3712,
+    "output_tokens": 81,
+    "output_reasoning_tokens": 37,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 37,
+     "image_tokens": 0
+    },
+    "cost": "0.0000893004"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:33.247061Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Cohere",
+    "cost": 6.9861e-05,
+    "upstream_inference_cost": 6.9861e-05,
+    "upstream_inference_prompt_cost": 1.6401e-05,
+    "upstream_inference_completions_cost": 5.346e-05,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:32Z"
+   },
+   "provider_response_id": "gen-1794475412-H8tVUrCZlRePwmDd7a6p",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-cb26-71a9-9890-fb6a2752da7c",
+   "conversation_id": "01a1cf11-cb26-71a9-9890-fb6bd6337e25",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"At the end of the fiscal year, the company had approximately {fig:0}.\", \"figures\": [{\"label\": \"Full-time equivalent employees\", \"value\": \"166,000\", \"unit\": \"employees\", \"status\": \"verified\", \"claimed_by\": \"agent\", \"provenance\": {\"kind\": \"text\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"Item 1\", \"tag\": null, \"period_start\": null, \"period_end\": null, \"dimensions\": {}, \"quote\": \"As of September 27, 2025, the Company had approximately 166,000 full-time equivalent employees.\", \"inputs\": [], \"formula\": null}}]}",
+     "tool_call_id": "chatcmpl-tool-aff51b29a14ddf94",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 3967,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 3712,
+    "output_tokens": 205,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.0002413404"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:34.411778Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Cohere",
+    "cost": 0.000196161,
+    "upstream_inference_cost": 0.000196161,
+    "upstream_inference_prompt_cost": 6.0861e-05,
+    "upstream_inference_completions_cost": 0.0001353,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:33Z"
+   },
+   "provider_response_id": "gen-1794475413-uT00REvpVCGMpPqblJtH",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-cb26-71a9-9890-fb6a2752da7c",
+   "conversation_id": "01a1cf11-cb26-71a9-9890-fb6bd6337e25",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  },
+  {
+   "parts": [
+    {
+     "tool_name": "final_result",
+     "args": "{\"answer\": \"At the end of the fiscal year, the company had approximately {fig:0}.\", \"figures\": [{\"label\": \"Full-time equivalent employees\", \"value\": 166000, \"unit\": \"employees\", \"status\": \"verified\", \"claimed_by\": \"agent\", \"provenance\": {\"kind\": \"text\", \"accession\": \"0000320193-25-000079\", \"statement_or_section\": \"Item 1\", \"tag\": null, \"period_start\": null, \"period_end\": null, \"dimensions\": {}, \"quote\": \"As of September 27, 2025, the Company had approximately 166,000 full-time equivalent employees.\", \"inputs\": [], \"formula\": null}}]}",
+     "tool_call_id": "chatcmpl-tool-90374cb09946756d",
+     "tool_kind": null,
+     "id": null,
+     "provider_name": null,
+     "provider_details": null,
+     "part_kind": "tool-call"
+    }
+   ],
+   "usage": {
+    "input_tokens": 4221,
+    "cache_write_tokens": 0,
+    "cache_write_1h_tokens": 0,
+    "cache_read_tokens": 4096,
+    "output_tokens": 204,
+    "output_reasoning_tokens": 0,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "audio_seconds": 0.0,
+    "details": {
+     "is_byok": 0,
+     "audio_tokens": 0,
+     "reasoning_tokens": 0,
+     "image_tokens": 0
+    },
+    "cost": "0.0002148132"
+   },
+   "model_name": "deepseek/deepseek-v4.1-flash",
+   "model_id": "openrouter:deepseek/deepseek-v4.1-flash",
+   "timestamp": "2026-11-12T09:23:36.112634Z",
+   "kind": "response",
+   "provider_name": "openrouter",
+   "provider_url": "https://openrouter.ai/api/v1",
+   "canonical_system": null,
+   "provider_details": {
+    "finish_reason": "tool_calls",
+    "downstream_provider": "Cohere",
+    "cost": 0.000171303,
+    "upstream_inference_cost": 0.000171303,
+    "upstream_inference_prompt_cost": 3.6663e-05,
+    "upstream_inference_completions_cost": 0.00013464,
+    "is_byok": false,
+    "timestamp": "2026-11-12T09:23:34Z"
+   },
+   "provider_response_id": "gen-1794475414-oLzeoUNv55Aw93ucprIt",
+   "finish_reason": "tool_call",
+   "run_id": "01a1cf11-cb26-71a9-9890-fb6a2752da7c",
+   "conversation_id": "01a1cf11-cb26-71a9-9890-fb6bd6337e25",
+   "metadata": null,
+   "workspace_ref": null,
+   "history_digest": null,
+   "failed_attempts": null,
+   "state": "complete"
+  }
+ ]
+}
