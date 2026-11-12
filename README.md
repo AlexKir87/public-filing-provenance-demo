@@ -6,7 +6,7 @@ The demo reads Apple Inc.'s annual report (10-K, fiscal year ended 2025-09-27, S
 
 > **The model proposes, the code verifies.** Every figure is checked in code against what read-only tools returned from the filing in that run. The assistant has no side-effect tools: it cannot write, send or store anything.
 
-**Demo video:** VIDEO-URL-PLACEHOLDER · Built by [Cognitia Engineering](https://cognitia-engineering.com) — AI agents for finance teams that show their work.
+**Demo video:** [watch on YouTube](https://youtu.be/ad_ybY5TaQE) · Built by [Cognitia Engineering](https://cognitia-engineering.com) — AI agents for finance teams that show their work.
 
 This is a demonstration on public data, **not client work and not investment advice**.
 
